@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/set_alarm">
+    <PreferenceCategory android:title="@string/settings">
+        <CheckBoxPreference android:key="on" 
+            android:title="@string/enable"
+            android:persistent="false"
+            />
+        <EditTextPreference android:key="label"
+            android:title="@string/label"
+            android:dialogTitle="@string/label" 
+            android:singleLine="true"
+            android:selectAllOnFocus="true"
+            android:persistent="false"
+            />
+        <Preference android:key="time" 
+            android:title="@string/time"
+            android:persistent="false"
+            />
+        <cn.putao.alarmclock.RepeatPreference android:key="setRepeat" 
+            android:title="@string/alarm_repeat"
+            android:entries="@array/days_of_week"
+            android:entryValues="@array/days_of_week"
+            android:persistent="false"
+            />
+        <cn.putao.preference.SeekBarPreference android:key="snooze"
+            android:title="@string/snooze"
+            android:text="@string/minutes_suffix"
+            android:max="60"
+            android:defaultValue="9"
+            android:persistent="false"
+            android:hint="@string/snooze_disabled"
+            />
+        <cn.putao.preference.SeekBarPreference android:key="duration"
+            android:title="@string/duration"
+            android:text="@string/minutes_suffix"
+            android:entries="@array/duration_values"
+            android:hint="@string/duration_disabled"
+            android:defaultValue="6"
+            android:persistent="false"
+            />
+        <ListPreference android:key="captcha_snooze" 
+            android:title="@string/captcha_snooze"
+            android:entries="@array/captcha_types"
+            android:entryValues="@array/captcha_values"
+            android:defaultValue="0"
+            android:persistent="false"
+            />
+        <ListPreference android:key="captcha_dismiss" 
+            android:title="@string/captcha_dismiss"
+            android:entries="@array/captcha_types"
+            android:entryValues="@array/captcha_values"
+            android:defaultValue="0"
+            android:persistent="false"
+            />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/alert">
+        <CheckBoxPreference android:key="vibrate" 
+            android:title="@string/alarm_vibrate"
+            android:persistent="false"
+            />
+        <CheckBoxPreference android:key="vibrate_only" 
+            android:title="@string/vibrate_only"
+            android:persistent="false"
+            android:defaultValue="false"
+            android:disableDependentsState="true"
+            />
+        <cn.putao.alarmclock.AlarmPreference android:key="alarm" 
+            android:title="@string/alert"
+            android:ringtoneType="alarm"
+            android:showDefault="false"
+            android:showSilent="false" 
+            android:dependency="vibrate_only"
+            android:persistent="false"
+            />
+        <cn.putao.preference.SeekBarPreference android:key="volume"
+            android:title="@string/volume"
+            android:text="@string/percent"
+            android:entries="@array/volume_values"
+            android:defaultValue="9"
+            android:dependency="vibrate_only"
+            android:persistent="false"
+            />
+        <cn.putao.preference.SeekBarPreference android:key="crescendo"
+            android:title="@string/crescendo"
+            android:text="@string/seconds"
+            android:entries="@array/crescendo_values"
+            android:defaultValue="0"
+            android:dependency="vibrate_only"
+            android:persistent="false"
+            />
+        <cn.putao.preference.SeekBarPreference android:key="delay"
+            android:title="@string/delay"
+            android:text="@string/milliseconds"
+            android:entries="@array/delay_values"
+            android:defaultValue="0"
+            android:dependency="vibrate_only"
+            android:persistent="false"
+            />
+    </PreferenceCategory>
+</PreferenceScreen>

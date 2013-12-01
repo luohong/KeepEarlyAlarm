@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- -->
+    <!-- Label shown on launcher icon -->
+    <string name="app_label">Keep Early</string>
+
+    <!-- Menu item on Alarm Clock screen: Add alarm -->
+    <string name="add_alarm">Add alarm</string>
+
+    <!-- Context Menu Item on Alarm Settings screen: Delete alarm -->
+    <string name="delete_alarm">Delete alarm</string>
+
+    <!-- Delete alarm confirmation dialog message. -->
+    <string name="delete_alarm_confirm">This alarm will be deleted.</string>
+
+    <!-- Menu item on Alarm Clock screen: Show clock -->
+    <string name="show_clock">Show clock</string>
+
+    <!-- Menu item on Alarm Clock screen: Hide clock -->
+    <string name="hide_clock">Hide clock</string>
+
+    <!-- Setting label on Set alarm screen: Label -->
+    <string name="label">Label</string>
+
+    <!-- Default label to display for an alarm -->
+    <string name="default_label">Alarm</string>
+
+    <!-- Preference category on Alarm Settings screen: Set alarm -->
+    <string name="set_alarm">Set alarm</string>
+
+    <!-- Setting labels on Set alarm screen: Enable alarm -->
+    <string name="enable">Turn on alarm</string>
+
+    <!-- Setting labels on Set alarm screen: Vibration on or off -->
+    <string name="alarm_vibrate">Vibrate</string>
+
+    <!-- Setting labels on Set alarm screen: Repeat -->
+    <string name="alarm_repeat">Repeat</string>
+
+    <!-- Setting labels on Set alarm screen: Select alarm ringtone  -->
+    <string name="alert">Ringtone</string>
+
+    <!-- Setting labels on Set alarm screen: Set time  -->
+    <string name="time">Time</string>
+
+
+    <!-- Title of the alarm alert -->
+    <string name="alert_title">Alarm</string>
+    
+    <!-- Button labels on the alarm dialog: Dismiss -->
+    <string name="alarm_alert_dismiss_text">Dismiss</string>
+
+    <!-- Alarm Alert screen: this message is shown after an alarm rung
+         unattended for a number of minutes.  It tells the user that
+         the alarm has been silenced.-->
+    <string name="alarm_alert_alert_silenced">Alarm silenced after <xliff:g id="minutes">%d</xliff:g> minutes</string>
+
+    <!-- Button labels on the alarm dialog: Snooze -->
+    <string name="alarm_alert_snooze_text">Snooze</string>
+
+    <!-- Toast that appears after Alarm is snoozed from the Alarm
+         dialog. Says the alarm will snooze for xxx minutes.  -->
+    <string name="alarm_alert_snooze_set">Snoozing for <xliff:g id="minutes">%d</xliff:g> minutes.</string>
+
+    <!-- Toast that appears after Alarm is snoozed from the Alarm
+         dialog. Shown if snooze cannot be set because the next alarm
+         would fire before the snooze alrm.  "Snooze not set - next
+         alarm set for xxx."  -->
+    <string name="alarm_alert_snooze_not_set">Snooze not set -- next alarm set for <xliff:g id="time">%s</xliff:g></string>
+
+
+    <!-- Alarm confirmation toast: Describes how long from now until
+         alarm fires -->
+    <string name="alarm_set">This alarm is set for <xliff:g id="time_delta">%s</xliff:g> from now.</string>
+
+    <!-- Alarm confirmation toast: A combiner that orders the segments
+         that follow -->
+    <string name="combiner"><xliff:g id="xxx">%1$s</xliff:g><xliff:g id="xxx">%2$s</xliff:g><xliff:g id="xxx">%3$s</xliff:g><xliff:g id="xxx">%4$s</xliff:g><xliff:g id="xxx">%5$s</xliff:g></string>
+
+    <!-- Alarm confirmation toast: singular day -->
+    <string name="day">"1 day"</string>
+
+    <!-- Alarm confirmation toast: plural days -->
+    <string name="days">"<xliff:g id="days">%s</xliff:g> days"</string>
+
+    <!-- Alarm confirmation toast: singular hour -->
+    <string name="hour">1 hour</string>
+
+    <!-- Alarm confirmation toast: plural hours -->
+    <string name="hours"><xliff:g id="hours">%s</xliff:g> hours</string>
+
+    <!-- Alarm confirmation toast: "and" to join hours and minutes -->
+    <string name="and">" and "</string>
+
+    <!-- Alarm confirmation toast: space  -->
+    <string name="space">" "</string>
+
+    <!-- Alarm confirmation toast: time less than one minute  -->
+    <string name="subminute">"less than 1 minute"</string>
+
+    <!-- Alarm confirmation toast: singular minute  -->
+    <string name="minute">"1 minute"</string>
+
+    <!-- Alarm confirmation toast: plural minutes  -->
+    <string name="minutes">"<xliff:g id="minutes">%s</xliff:g> minutes"</string>
+
+    <!-- Alarm confirmation toast: Ante Meridiem, or am  -->
+    <string name="am">am</string>
+
+    <!-- Alarm confirmation toast: Post Meridiem, or pm  -->
+    <string name="pm">pm</string>
+
+    <!-- Repeat options that appear under an alarm on main Alarm Clock
+         screen to identify repetition schedule: special case for when
+         the alarm is set to repeat every day -->
+    <string name="every_day">every day</string>
+
+    <!-- Repeat options that appear under an alarm on main Alarm Clock
+         screen to identify repetition schedule: special case for when
+         the alarm is set to never repeat -->
+    <string name="never">Never</string>
+
+    <!-- Repeat options that appear under an alarm on main Alarm Clock
+         screen to identify repetition schedule: concatenate days with
+         this character, i.e. "Mon, Tue, Wed" -->
+    <string name="day_concat">", "</string>
+
+    <!-- Appears at the top of the Clock Picker screen: Tell user to
+         select a clock to display -->
+    <string name="clock_instructions">Select a clock to display.</string>
+
+    <!-- Error dialog title: Alarm not set.  Appears only on critical
+         failure -->
+    <string name="error">Alarm not set</string>
+
+    <!-- Error dialog message.  Appears only on critical
+         failure -->
+    <string name="dberror">Sorry, the alarm could not be set.</string>
+
+    <!-- Label for analog clock gadget, shown in list of all gadgets -->
+    <string name="analog_gadget">Analog clock</string>
+
+    <!-- Days of week -->
+    <string-array name="days_of_week">
+        <!-- Day of week: Monday -->
+        <item>Monday</item>
+        <!-- Day of week: Tuesday -->
+        <item>Tuesday</item>
+        <!-- Day of week: Wednesday -->
+        <item>Wednesday</item>
+        <!-- Day of week: Thursday -->
+        <item>Thursday</item>
+        <!-- Day of week: Friday  -->
+        <item>Friday</item>
+        <!-- Day of week: Saturday -->
+        <item>Saturday</item>
+        <!-- Day of week: Sunday -->
+        <item>Sunday</item>
+    </string-array>
+    
+    <!-- Short Day of week  -->
+    <string-array name="days_of_week_short">
+        <!-- Short Day of week: Mon -->
+        <item>Mon</item>
+        <!-- Short Day of week: Tue -->
+        <item>Tue</item>
+        <!-- Short Day of week: Wed -->
+        <item>Wed</item>
+        <!-- Short Day of week: Thu -->
+        <item>Thu</item>
+        <!-- Short Day of week: Fri  -->
+        <item>Fri</item>
+        <!-- Short Day of week: Sat -->
+        <item>Sat</item>
+        <!-- Short Day of week: Sun -->
+        <item>Sun</item>
+    </string-array>
+    
+    <!-- Menu item title for general Alarm Clock Settings -->
+    <string name="settings">Settings</string>
+
+    <!-- Setting title for whether the alarm should play in silent mode.
+         Usually, silent mode only affects the ringer, but this setting
+         will make the alarms respect silent mode too. -->
+    <string name="alarm_in_silent_mode_title">Alarm in silent mode</string>
+
+    <!-- Setting summary for whether the alarm should play in silent mode. -->
+    <string name="alarm_in_silent_mode_summary">Play alarm even when the phone is in silent mode</string>
+
+
+
+
+    <!-- alarming strings -->
+    <string name="alarm_list_empty">No alarms.</string>
+
+    <!-- context menu -->
+    <string name="edit_alarm">Edit alarm</string>
+    <string name="preview_alarm">Preview alarm</string>
+
+    <!-- preferences -->
+    <string name="show_clock_summary">Show clock on alarm list screen</string>
+    <string name="quickalarm_title">Show Quick Snooze</string>
+    <string name="quickalarm_summary">Use Quick Snooze for short timers</string>
+    <string name="bedclock_prefs">Bed Clock Preferences</string>
+    <string name="bedclock_prefs_summary">Bedside clock for night</string>
+    <string name="bedclock_enable">Enable bed clock</string>
+    <string name="bedclock_enable_summary">Large clock visible from bed</string>
+    <string name="bedclock_wake_lock">Bed clock never sleeps</string>
+    <string name="bedclock_wake_lock_summary">Bed clock disables standby if charging</string>
+    <string name="alarm_defaults">Alarm Defaults</string>
+    <string name="alarm_defaults_summary">Defaults for new alarms and quick snooze</string>
+    <string name="about">About</string>
+    <string name="about_title">About Alarming!</string>
+
+    <!-- about dialog -->
+    <string name="app_description">Alarming! - AlarmClock enhanced</string>
+    <string name="app_version">2.1.0</string>
+    <string name="about_text"><b>Original source</b>\n<u>http://source.android.com</u>\n\n
+    <b>Source code available</b>\n<u>http://github.com/lithium/alarming</u>\n\n
+    <b>Icon created by</b>\n<u>http://en.wikipedia.org/wiki/User:Tkgd2007</u>\n\n
+    Published by Hlidskialf Software\n\n
+    No warranty of any kind provided.\nNo affiliation with above parties implied.
+    </string>
+
+
+
+
+
+    <!-- quick snooze strings -->
+    <string name="alarming_widget">Alarming! Clock</string>
+
+    <string name="quick_alarm">Quick Snooze</string>
+    <string name="snooze_message_text">Snoozing until %s</string>
+    <string name="snooze_dismissed">Snooze dismissed.</string>
+
+    <string name="percent">%</string>
+    <string name="milliseconds">ms</string>
+    <string name="seconds">seconds</string>
+    <string name="minutes_suffix">minutes</string>
+
+    <!-- additional alarm preferences -->
+    <string name="vibrate_only">Silent Alarm</string>
+    <string name="snooze">Snooze</string>
+    <string name="snooze_disabled">Snooze disabled</string>
+    <string name="duration">Silence After</string>
+    <string name="duration_disabled">Never silence</string>
+    <string name="crescendo">Crescendo</string>
+    <string name="crescendo_disabled">No increase</string>
+    <string name="volume">Volume</string>
+    <string name="delay">Delay</string>
+    <string name="delay_disabled">Dont pause</string>
+    <string name="captcha_snooze">Captcha on Snooze</string>
+    <string name="captcha_dismiss">Captcha on Dismiss</string>
+    <string name="shake_snooze_title">Allow shake to snooze</string>
+    <string name="shake_snooze_summary">Shake your phone to trigger snooze</string>
+
+    <!-- bedclock strings -->
+    <string name="bed_clock">Bed Clock</string>
+    <string name="next_animation">Next animation</string>
+    <string name="flip_orientation">Flip orientation</string>
+
+    <!-- captcha types -->
+    <string-array name="captcha_types">
+      <item>None</item>
+      <item>Puzzle</item>
+      <item>Math</item>
+    </string-array>
+    <string-array name="captcha_values">
+      <item>0</item>
+      <item>1</item>
+      <item>2</item>
+    </string-array>
+
+</resources>
+
+
